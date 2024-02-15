@@ -89,3 +89,106 @@ input[type="password"]::placeholder, input[type="text"]::placeholder{  /*  Escol
 input[type="password"]:focus, input[type="text"]:focus{  /*  Escolhendo inputs por type */ 
     border: 1px solid rgb(165, 164, 164);
 } 
+
+input[type="submit"]{  /*  Escolhendo inputs por type */ 
+    background-color: #3c96ed;
+    border: 0;
+    height: 30px;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    width: 320px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.info-box{
+    background-color: #FFFFFF;
+    border: 1px solid rgb(236, 234, 234);
+    height: 60px;
+    margin: 10px auto 0; /* TOP, LEFT AND RIGHT, BOTTOM  */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-box p {
+    user-select: none;   /* Nao permite selecionar o parágrafo */
+}
+
+.info-box p a {
+    font-weight: bold;
+    user-select: none;  /* Nao permite selecionar o link */
+}
+
+.get-app{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.app-buttons{
+    margin-top: 16px;
+}
+.app-buttons img{
+    height: 40px;
+    padding: 0 2px ;
+}
+
+footer{
+    text-align: center;
+    height: 50px;
+    margin-top: -50px;
+}
+
+footer a{
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.year{
+    font-size: 12px;
+    font-weight: bold;
+    color: grey;
+    padding-left: 15px;
+    display: inline-block;
+}
+
+/* Signup */
+
+#container-signup {
+    margin: 0 auto;
+    min-height: 100%;
+    width: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.message{
+    margin: 10px 70px; /* TOP BUTTON LEFT RIGHT */
+}
+
+.message span{
+    text-align: center;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 20px; /* Espaço entre uma linha e outra */
+    color: gray;
+}
+
+.Facebook-button{
+    width: 320px;
+    margin: 10 0;
+    height: 35px;
+    background-color: #0095f6;
+    color: white;
+    border: 0;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
