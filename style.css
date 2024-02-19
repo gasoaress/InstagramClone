@@ -40,7 +40,7 @@ body{
 }
 
 .left{
-    background-image: url("./assets/main-foto.png");
+    background-image: url("./assets/main.jpg");
     background-size: 450px;
     background-repeat: no-repeat;
     background-position: center;
@@ -162,7 +162,7 @@ footer a{
 
 #container-signup {
     margin: 0 auto;
-    min-height: 100%;
+    min-height: 90%;
     width: 400px;
     display: flex;
     align-items: center;
