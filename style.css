@@ -7,11 +7,20 @@
 
 a{
     text-decoration: none;
-    color: #3c96ed;
+    color: var(--button-primary);
 }
 
 body{
-    background: #fafafa;
+    /* Declaração e atribuição de variáveis */
+    /* É legal sempre declarar no BODY pois assim consigo referenciar de forma global, onde todas as tags acessam */
+    --background: #fafafa; 
+    --white: #FFFFFF;
+    --black: #000000;
+    --button-primary: #0095f6;
+    --border-primary: #e6e6e6;
+
+
+    background: var(--background);
     height: 100%;
     width: 100%;
     margin: 0;
@@ -28,7 +37,7 @@ body{
 
 #container {
     margin: 0 auto;
-    min-height: 100%;
+    min-height: 90%;
     width: 800px;
     display: flex;
     align-items: center;
@@ -40,7 +49,7 @@ body{
 }
 
 .left{
-    background-image: url("./assets/main-foto.png");
+    background-image: url("./assets/main.png");
     background-size: 450px;
     background-repeat: no-repeat;
     background-position: center;
@@ -54,8 +63,8 @@ body{
 }
 
 .login-panel{
-    background-color: #FFF;
-    border: 1px solid #E6E6E6;
+    background-color: var(--white);
+    border: 1px solid var(--border-primary);
     text-align: center;
     padding: 20px 0;
 }
@@ -72,8 +81,8 @@ form{
 }
 
 input[type="password"], input[type="text"]{  /*  Escolhendo inputs por type */ 
-    background-color: #FFFFFF;
-    border: 1px solid rgb(236, 234, 234);
+    background-color: var(--white);
+    border: 1px solid var(--border-primary);
     height: 40px;
     border-radius: 4px;
     margin-top: 10px;
@@ -84,14 +93,14 @@ input[type="password"], input[type="text"]{  /*  Escolhendo inputs por type */
 } 
 
 input[type="password"]::placeholder, input[type="text"]::placeholder{  /*  Escolhendo inputs por type */ 
-    color: rgb(165, 164, 164);
+    color: var(--border-primary);
 } 
 input[type="password"]:focus, input[type="text"]:focus{  /*  Escolhendo inputs por type */ 
-    border: 1px solid rgb(165, 164, 164);
+    border: 1px solid var(--border-primary);
 } 
 
 input[type="submit"]{  /*  Escolhendo inputs por type */ 
-    background-color: #3c96ed;
+    background-color: var(--button-primary);
     border: 0;
     height: 30px;
     border-radius: 4px;
@@ -100,13 +109,13 @@ input[type="submit"]{  /*  Escolhendo inputs por type */
     font-size: 13px;
     font-weight: bold;
     width: 320px;
-    color: #FFFFFF;
+    color: var(--white);
     cursor: pointer;
 }
 
 .info-box{
-    background-color: #FFFFFF;
-    border: 1px solid rgb(236, 234, 234);
+    background-color: var(--white);
+    border: 1px solid var(--border-primary);
     height: 60px;
     margin: 10px auto 0; /* TOP, LEFT AND RIGHT, BOTTOM  */
 
@@ -140,11 +149,11 @@ input[type="submit"]{  /*  Escolhendo inputs por type */
 footer{
     text-align: center;
     height: 50px;
-    margin-top: -50px;
+    margin-top: 20px;
 }
 
 footer a{
-    color: black;
+    color: var(--black);
     text-transform: uppercase;
     font-weight: bold;
     margin-right: 5px;
@@ -162,7 +171,7 @@ footer a{
 
 #container-signup {
     margin: 0 auto;
-    min-height: 100%;
+    min-height: 90%;
     width: 400px;
     display: flex;
     align-items: center;
@@ -184,8 +193,8 @@ footer a{
     width: 320px;
     margin: 10 0;
     height: 35px;
-    background-color: #0095f6;
-    color: white;
+    background-color: var(--button-primary);
+    color: var(--white);
     border: 0;
     border-radius: 4px;
     font-size: 15px;
@@ -202,7 +211,7 @@ footer a{
 
 .line{
     height: 1px;
-    background-color: #e6e6e6;
+    background-color: var(--border-primary);
     width: 35%;
 }
 
