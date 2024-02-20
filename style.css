@@ -49,7 +49,11 @@ body{
 }
 
 .left{
+<<<<<<< HEAD
     background-image: url("./assets/main.png");
+=======
+    background-image: url("./assets/main.jpg");
+>>>>>>> 172fa3e4b99c2b5f2d12b7f460c56f2e2fdd7508
     background-size: 450px;
     background-repeat: no-repeat;
     background-position: center;
