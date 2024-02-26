@@ -32,7 +32,6 @@ body{
 
 #wrapper{
     height: 100vh;
-
 }
 
 #container {
@@ -49,7 +48,7 @@ body{
 }
 
 .left{
-    background-image: url("./assets/main.jpg");
+    background-image: url("./assets/main.png");
     background-size: 450px;
     background-repeat: no-repeat;
     background-position: center;
