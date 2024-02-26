@@ -129,11 +129,11 @@ section{
 
 .postimages{
     margin-top: 7px;
-    min-width: 500px;
+    min-width: 550px;
     min-height: 450px;
     max-width: 550px;
     max-height: 450PX;
-    border-radius: 10%;
+    border-radius: 5%;
 }
 
 .username{
@@ -151,10 +151,32 @@ section{
     width: 30px;
     background-size: cover;
     height: 100%;
+    cursor: pointer;
 }
 
 .username h1{
     padding-left: 10px;
+    cursor: pointer;
+}
+
+.reactions{
+    margin-top: 15px;
+    width: 100%;
+    height: 33px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: flex-start;
+}
+
+.reactions img{
+    cursor: pointer;
+    height: 100%;
+    padding-right: 8px;
+}
+
+#save{
+    padding-left: 72%;
 }
 
 
