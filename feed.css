@@ -1,4 +1,4 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -6,9 +6,9 @@
     font-family: sans-serif;
 }
 
-body{
-    --background: #fafafa; 
-    --silver: #dfdfdf; 
+body {
+    --background: #fafafa;
+    --silver: #dfdfdf;
     font-family: 'Roboto', sans-serif;
     background-color: var(--background);
     width: 100%;
@@ -18,7 +18,7 @@ body{
 }
 
 /* Inicio HEADER */
-header{
+header {
     background-color: var(--silver);
     height: 90px;
     width: 100%;
@@ -27,25 +27,26 @@ header{
 
     position: sticky;
     position: fixed;
-    z-index: 9; /* GARANTE QUE MEU MENU VAI FICAR SEMPRE A FRENTE NA HORA DO SCROLL */
+    z-index: 9;
+    /* GARANTE QUE MEU MENU VAI FICAR SEMPRE A FRENTE NA HORA DO SCROLL */
 }
 
-.logo{
+.logo {
     height: 100%;
     width: 200px;
     margin: 0;
-    
+
     cursor: pointer;
 }
 
-.nav{
+.nav {
     background-color: var(--silver);
     display: flex;
     justify-content: center;
     padding-left: 5%;
 }
 
-.nav input{
+.nav input {
     background-color: var(--background);
     border: 1px solid var(--silver);
     height: 40px;
@@ -59,11 +60,11 @@ header{
     text-transform: capitalize;
 }
 
-.nav input::placeholder{
-    color: rgb(194,187, 187);
+.nav input::placeholder {
+    color: rgb(194, 187, 187);
 }
 
-.nav-list{
+.nav-list {
     height: 100%;
     display: flex;
     align-items: center;
@@ -72,9 +73,9 @@ header{
     margin-right: 28px;
 }
 
-.icon{
+.icon {
     height: 100%;
-    
+
 }
 
 .nav-list a {
@@ -84,28 +85,30 @@ header{
     padding-right: 0px;
 }
 
-.nav-list a img{
+.nav-list a img {
     height: 32px;
 }
 
-.profile{
+.profile {
     border-radius: 50%;
     width: 30px;
     background-size: cover;
 }
+
 /* FIM HEADER */
 
 
-section{
+section {
     width: 100%;
     display: grid;
     height: calc(100vh - 90px);
-    justify-items: center; 
-    justify-content: center;   
+    justify-items: center;
+    justify-content: center;
     padding: 30px;
     grid-gap: 30px;
 }
-.cards{
+
+.cards {
     display: flex;
     width: 800px;
     flex-direction: column;
@@ -115,29 +118,31 @@ section{
     /* background-color: blueviolet; */
 }
 
-.posts{
-    display: grid ;
+.posts {
+    display: grid;
     width: 600px;
     background-color: #f7f2f2;
     padding: 30px;
-    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
-    justify-items: center; 
-    justify-content: center;   
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+    justify-content: center;
     border-radius: 5%;
     margin-bottom: 20px;
 }
 
-.infos{
+.infos {
     display: flex;
     flex-direction: row;
     width: 100%;
     margin-top: 5px;
 }
-.num_likes{
+
+.num_likes {
     font-size: 17px;
     font-weight: bold;
 }
-.postimages{
+
+.postimages {
     margin-top: 2px;
     min-width: 550px;
     min-height: 450px;
@@ -146,7 +151,7 @@ section{
     border-radius: 5%;
 }
 
-.username{
+.username {
     width: 100%;
     height: 30px;
     display: flex;
@@ -156,7 +161,7 @@ section{
     align-items: center;
 }
 
-.username img{
+.username img {
     border-radius: 50%;
     width: 30px;
     background-size: cover;
@@ -164,11 +169,12 @@ section{
     cursor: pointer;
 }
 
-.username h1{
+.username h1 {
     padding-left: 10px;
     cursor: pointer;
 }
-.user_text{
+
+.user_text {
     display: flex;
     flex-direction: row;
     height: 30px;
@@ -185,7 +191,7 @@ section{
     padding-right: 5px;
 }
 
-.reactions{
+.reactions {
     margin-top: 3px;
     width: 100%;
     height: 33px;
@@ -195,17 +201,12 @@ section{
     justify-content: flex-start;
 }
 
-.reactions img{
+.reactions img {
     cursor: pointer;
     height: 100%;
     padding-right: 8px;
 }
 
-#save{
+#save {
     padding-left: 72%;
 }
-
-
-
-
-
